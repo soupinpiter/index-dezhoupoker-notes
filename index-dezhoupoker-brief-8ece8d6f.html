@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>德州扑克资料索引 · 产品说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background: #f4f5f7;
+            color: #1e1e2f;
+            line-height: 1.6;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover {
+            color: #004999;
+            border-bottom-color: #004999;
+        }
+
+        /* 深色头图 */
+        .hero {
+            background: #0f1821;
+            color: #e0e6ed;
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(0,100,180,0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 350;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+            color: #f0f4fa;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            max-width: 720px;
+            margin: 0 auto;
+            color: #b0c4d8;
+            font-weight: 300;
+        }
+
+        /* 浅色正文区 */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 400;
+            border-left: 5px solid #0066cc;
+            padding-left: 1rem;
+            margin: 2.5rem 0 1.2rem;
+            color: #1a2630;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.8rem 1.8rem 2.2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 1px 3px rgba(0,0,0,0.04);
+            transition: box-shadow 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 0.6rem;
+            color: #0f1b2a;
+        }
+        .card p, .card ul {
+            font-size: 0.95rem;
+            color: #2c3a4b;
+        }
+        .card ul {
+            padding-left: 1.2rem;
+            list-style-type: disc;
+        }
+        .card ul li {
+            margin-bottom: 0.35rem;
+        }
+
+        .highlight-box {
+            background: #eef2f7;
+            border-radius: 16px;
+            padding: 2rem 2.2rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+        .highlight-box p {
+            margin-bottom: 0.6rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #dce2e9;
+            padding: 1.1rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+            color: #0f1b2a;
+        }
+        .faq-answer {
+            color: #3b4b5e;
+            font-size: 0.95rem;
+        }
+
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid #0066cc;
+            color: #0066cc;
+            padding: 0.5rem 1.4rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 450;
+            transition: background 0.2s, color 0.2s;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+        .btn-outline:hover {
+            background: #0066cc;
+            color: #fff;
+            border-color: #0066cc;
+        }
+
+        footer {
+            background: #0f1821;
+            color: #8a9aa8;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            font-size: 0.85rem;
+        }
+        footer a {
+            color: #9bb6d0;
+        }
+        footer a:hover {
+            color: #cde2f5;
+        }
+
+        /* 响应式 */
+        @media (max-width: 720px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .container { padding: 2rem 1rem 3rem; }
+            .card { padding: 1.5rem; }
+            .highlight-box { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <h1>信息索引 · 德州扑克</h1>
+    <p>从规则拆解到策略记录，一份聚焦资料整理与场景参考的产品说明。</p>
+</header>
+
+<main class="container">
+
+    <!-- 摘要区 -->
+    <section>
+        <h2 class="section-title">摘要</h2>
+        <p style="font-size: 1.05rem; margin-bottom: 0.8rem;">
+            本站以<strong>资料整理</strong>与<strong>信息索引</strong>为出发点，围绕 <a href="https://index-dezhoupoker.com">德州扑克</a> 的玩法逻辑、术语体系与常见场景进行结构化梳理。内容来源于公开规则、牌局记录以及玩家社群讨论的归纳，不提供分析预测或投资建议。
+        </p>
+        <p style="color: #3b4b5e;">
+            面向希望系统了解牌型强度、行动顺序、位置价值等基础模块的读者，页面侧重可查阅性与逻辑层次，而非即时竞技数据。
+        </p>
+    </section>
+
+    <!-- 亮点 / 特点 卡片区 -->
+    <h2 class="section-title">亮点</h2>
+    <div class="grid-2">
+        <div class="card">
+            <h3>术语索引 · 分层查阅</h3>
+            <p>将翻前、翻后、河牌圈等阶段常用术语按使用频率与难度分级，附带简短释义与交叉引用。适合从零开始构建知识框架。</p>
+        </div>
+        <div class="card">
+            <h3>位置价值速览</h3>
+            <p>用表格对比早期位置、中间位置、庄位、盲注位的攻防特点，并标注典型起手牌建议范围（基于常见现金局结构）。</p>
+        </div>
+        <div class="card">
+            <h3>概率参考页</h3>
+            <p>整理底池赔率、听牌概率、手牌对抗胜率等常用数值，附带简单计算示例。所有数据均标注参考来源与局型前提。</p>
+        </div>
+        <div class="card">
+            <h3>牌型术语对照</h3>
+            <p>中文/英文/常见简称对照表，涵盖10种标准牌型及部分变体规则说明，便于资料查询或牌桌沟通。</p>
+        </div>
+    </div>
+
+    <!-- 使用建议 / 场景 -->
+    <section>
+        <h2 class="section-title">使用建议</h2>
+        <div class="highlight-box">
+            <p><strong>▸ 入门阶段：</strong>从「位置价值速览」与「牌型对照」开始，建立对行动次序与牌力分级的直觉。建议配合不超过两本规则书交叉阅读。</p>
+            <p><strong>▸ 提升阶段：</strong>利用概率参考页检验常见听牌场景，同时关注「术语索引」中翻后行动的分类说明，减少行动中的模糊判断。</p>
+            <p><strong>▸ 资料核对：</strong>如果发现与其他信息源不一致，优先查阅本站标注的参考局型（如无上限、限注、锦标赛结构），不同规则下结论常有差异。</p>
+        </div>
+    </section>
+
+    <!-- 可信但克制的访问说明 -->
+    <section>
+        <h2 class="section-title">访问说明</h2>
+        <div style="background: #ffffff; border-radius: 12px; padding: 1.8rem 2rem; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+            <p>本站内容仅作为<strong>信息索引与学习参考</strong>，不构成任何形式的战术指导、投注建议或游戏策略承诺。</p>
+            <p>所有资料均基于公开规则与通用牌局理论整理，部分数值为近似值，请以实际游戏版本为准。页面不含广告追踪、用户画像或第三方统计脚本，仅在必要处保留指向 <a href="https://index-dezhoupoker.com">德州扑克</a> 的资料入口，方便读者获取更完整的规则原文。</p>
+            <p style="margin-top: 0.5rem; color: #4d6278;">建议读者结合自身经验与多信源交叉验证，理性使用任何牌类资料。</p>
+        </div>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section style="margin-top: 3rem;">
+        <h2 class="section-title">FAQ 摘要</h2>
+        <div style="background: #ffffff; border-radius: 12px; padding: 0.5rem 2rem 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
+            <div class="faq-item">
+                <div class="faq-question">网站涵盖哪些变体规则？</div>
+                <div class="faq-answer">目前以标准无上限德州扑克（Texas No‑Limit Hold’em）为主，附带有限注与部分锦标赛规则的差异说明。不包含奥马哈、Razz等变体。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">概率数值是否实时更新？</div>
+                <div class="faq-answer">不实时更新。所有概率表均基于静态组合论计算，并标注了有效手牌范围假设。建议作为理论参考，而非动态决策依据。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">是否有论坛或社群功能？</div>
+                <div class="faq-answer">本站仅为资料索引页面，不提供交互社区、评论或即时聊天功能。内容由编辑整理维护，更新频率约每月一次。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">为什么部分术语同时保留英文？</div>
+                <div class="faq-answer">为了便于读者在阅读国际牌局、英文论坛或扑克软件时快速对应。中英文对照是本索引的核心设计之一。</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 附加链接（自然嵌入句子） -->
+    <p style="margin-top: 2.8rem; font-size: 0.95rem; color: #4b5e72; text-align: center;">
+        若需查阅更完整的规则原文与术语扩展，可前往 <a href="https://index-dezhoupoker.com">德州扑克</a> 资料站进一步浏览。
+    </p>
+
+</main>
+
+<footer>
+    <p style="margin-bottom: 0.3rem;">资料索引 · 仅供学习参考</p>
+    <p>内容基于公开规则整理 · 页面无跟踪脚本</p>
+    <p style="margin-top: 0.6rem;"><a href="https://index-dezhoupoker.com">德州扑克</a> — 信息入口</p>
+</footer>
+
+</body>
+</html>
